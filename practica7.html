@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 7</title>
+</head>
+<body>
+
+    <h1>Practica 7</h1>
+
+   <img src="practica7.jpg" width="500"><br><br>
+
+    <h2>Explicacion</h2>
+
+ 
+
+    <p><strong>Codigo: practica 7 (Creacion de Formularios con Estilos)</strong></p>
+
+    <p>Este codigo muestra como crear un formulario de registro en HTML para que el usuario ingrese datos y como usar CSS para darle un diseno moderno con bordes redondeados y un contenedor gris de fondo.</p>
+
+    <p><strong>Como funciona el HTML:</strong><br><br>
+    form action="upload.php" method="post" enctype="multipart/form-data": Es la etiqueta principal del formulario. El atributo enctype es obligatorio aqui porque el formulario permite subir archivos (como fotos).<br><br>
+    label: Son las etiquetas de texto que indican que dato poner (Nombre, Apellido, Contrasena, Subir fotografia).<br><br>
+    input type="text" y type="password": Crean las cajas de texto normales y la caja de contrasena que oculta los caracteres con puntos.<br><br>
+    input type="file": Crea el boton especial que abre la ventana para seleccionar un archivo o foto desde el dispositivo.<br><br>
+    placeholder: Es el texto de sugerencia gris que aparece dentro de las cajas y desaparece cuando el usuario empieza a escribir.<br><br>
+    input type="submit": Es el boton de envio que tiene el texto "Submit".</p>
+
+    <p><strong>Como funciona el CSS:</strong><br><br>
+    input[type=text], input[type=password], input[type=file], select { ... }: Esta regla aplica estilos al mismo tiempo a todas las cajas de entrada de datos.<br><br>
+    width: 50%; hace que las cajas ocupen la mitad del ancho de la pantalla.<br><br>
+    padding: 12px 20px; les da espacio por dentro para que no se vean apretadas.<br><br>
+    border-radius: 30px; es lo que hace que las esquinas de las cajas se vean completamente redondas en lugar de cuadradas.<br><br>
+    box-sizing: border-box; es un truco de CSS para que el grosor del borde y el padding no estiren la caja mas alla del 50% asignado.<br><br>
+    input[type=submit] { ... }: Le da estilos especificos al boton de enviar. Le pone un fondo verde (#4CAF50), texto blanco, quita el borde por defecto y le da esquinas redondeadas de 30px.<br><br>
+    input[type=submit]:hover { ... }: Usa la pseudo-clase :hover. Esto hace que cuando el usuario pasa el cursor del mouse por encima del boton, el color verde cambie a un tono un poco mas oscuro (#45a049), creando un efecto visual interactivo.<br><br>
+    div { ... }: Le da estilo al cuadro contenedor que encierra todo el formulario. Le pone un fondo gris claro (#f2f2f2), un espacio interno (padding) de 20px y esquinas suavemente redondeadas de 5px.</p>
+
+</body>
+</html>
